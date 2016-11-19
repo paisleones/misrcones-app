@@ -16,6 +16,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+ document.addEventListener("deviceready", onDeviceReady, false);
+    function onDeviceReady() {
+        console.log("navigator.geolocation works well");
+    }
+    
 var app = {
     // Application Constructor
     initialize: function() {
