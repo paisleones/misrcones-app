@@ -67,8 +67,24 @@ $.ajax({
             <br>
             <div id="latitud"></div>
             <div id="longitud"></div>
+            
+            
+            	<a class="boton" onclick="captureAudio();">Audio</a>
+                <p><br>
+				<a class="boton" onclick="captureImage();">Image</a>
+                <p><br>
+				<a class="boton" onclick="captureVideo();">Video</a>
+                <p><br>
+				<div class="result-block">
+				Capture Result: <span id="capture-result"></span><br/>
+				<span id="format-data"></span><br/>
+				</div>
+                
         </div>
     </div>
+    
+
+
     
       <script>
          document.addEventListener("deviceready", onDeviceReady, false);
